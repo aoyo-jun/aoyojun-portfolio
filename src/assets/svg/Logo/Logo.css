@@ -1,0 +1,25 @@
+@keyframes blinkGreenSVG {
+    0%, 100% {
+      fill: #000000;
+    }
+    50% {
+      fill: #B0F436;
+    }
+}
+
+@keyframes blinkSVG {
+  50% {
+    fill: none; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .blink-green-svg:hover {
+    animation: blinkGreenSVG 0.2s ease-in-out 2;
+    fill: #B0F436 
+  }
+}
+
+.blink-svg {
+  animation: blinkSVG 0.5s step-end infinite alternate;
+}

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@keyframes blink {
+  50% {
+    opacity: 0; 
+  }
+}
+
+@keyframes blinkGreen {
+  0%, 100% {
+    color: #050505;
+  }
+  50% {
+    color: #B0F436;
+  }
+}
+
+@theme {
+  --font-mada: "Mada", sans-serif;
+
+  --color-default-bg: #F8F3F5;
+  --color-default-primary: #f0f0f0;
+  --color-default-secondary: #B0F436;
+  --color-black-primary: #1E1E1E;
+  --color-black-bg: #0E0E0E;
+  
+  --animate-blink: blink 0.5s step-end infinite alternate;
+  --animate-blink-green: blinkGreen 0.2s ease-in-out 2;
+}
+
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+* {
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  line-height: inherit;
+}
