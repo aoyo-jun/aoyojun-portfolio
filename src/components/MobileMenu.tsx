@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "@lib/utils";
 
-import { MenuToggleProps } from "../types";
-import { SectionProps } from "../types.ts"
+import { MenuToggleProps } from "@types";
+import { SectionProps } from "@types"
 
-import MobileMenuItems from "./MobileMenuItems.tsx";
-import { ReactComponent as Github } from '../assets/svg/github.svg';
-import { ReactComponent as Linkedin } from '../assets/svg/linkedin.svg';
+import MobileMenuItems from "@components/MobileMenuItems";
+import { ReactComponent as Github } from '@assets/svg/github.svg';
+import { ReactComponent as Linkedin } from '@assets/svg/linkedin.svg';
 
 function MobileMenu({
     menuOpen,

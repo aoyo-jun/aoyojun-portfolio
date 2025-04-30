@@ -1,5 +1,5 @@
-import { cn } from "../lib/utils";
-import { MenuToggleProps } from "../types";
+import { cn } from "@lib/utils";
+import { MenuToggleProps } from "@types";
 
 function Menu({
     menuOpen,

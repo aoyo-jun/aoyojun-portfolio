@@ -1,6 +1,6 @@
 import "./Logo.css"
-import { MenuToggleProps } from "../../../types";
-import { cn } from "../../../lib/utils";
+import { MenuToggleProps } from "@types";
+import { cn } from "@lib/utils";
 
 function Logo({
     menuOpen

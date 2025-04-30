@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin 'tailwind-scrollbar';
+  
 @keyframes blink {
   50% {
     opacity: 0; 
@@ -28,18 +30,19 @@
   --animate-blink-green: blinkGreen 0.2s ease-in-out 2;
 }
 
-
 html,
 body,
 :root {
   height: 100%;
 }
 
-* {
-  overscroll-behavior: none;
-}
-
 body {
   margin: 0;
   line-height: inherit;
+  font-family: "Mada", sans-serif;
+}
+
+:root{
+  scrollbar-color: #888888 #0E0E0E !important;
+  scrollbar-width: thin !important;
 }

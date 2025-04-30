@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-import Header from "./components/Header.tsx";
-import MobileMenu from "./components/MobileMenu.tsx";
+import Header from "@components/Header";
+import MobileMenu from "@components/MobileMenu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,25 +48,23 @@ function App() {
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} activeSection={activeSection} scrollToSection={scrollToSection} />
       <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} activeSection={activeSection} scrollToSection={scrollToSection} />
       <section id="home" ref={homeRef}>
-        <div className="flex relative h-[100vh] w-full">
-
+        <div className="fixed top-0 left-0 z-10 h-[80vh] lg:h-screen w-full">
+          <img className="h-full w-full object-cover" src="/assets/images/desk.png" alt="Hero"/>
         </div>
       </section>
-      <section id="about" ref={aboutRef}>
-        <div className="flex relative h-[100vh] w-full bg-black-bg">
-
-        </div>
-      </section>
-      <section id="projects" ref={projectsRef}>
-        <div className="flex relative h-[100vh] w-full bg-red-500">
-
-        </div>
-      </section>
-      <section id="contact" ref={contactRef}>
-        <div className="flex relative h-[100vh] w-full bg-blue-500">
-
-        </div>
-      </section>
+      <div className="mt-[80dvh] lg:mt-[100dvh]">
+        <main className="relative flex z-20 scroll-m-9 flex-col bg-black-bg pt-4 pb-12 lg:pb-24">
+          <section id="about" ref={aboutRef}>
+            <div className="flex h-[1000px] w-full bg-green-500"></div>
+          </section>
+          <section id="projects" ref={projectsRef}>
+            <div className="flex h-[1000px] w-full bg-red-500"></div>
+          </section>
+          <section id="contact" ref={contactRef}>
+            <div className="flex h-[1000px] w-full bg-blue-500"></div>
+          </section>
+        </main>
+      </div>
     </>
   )
 }

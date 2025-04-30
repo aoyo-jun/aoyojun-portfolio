@@ -1,5 +1,5 @@
-import { cn } from "../lib/utils";
-import { MenuToggleProps, SectionProps } from "../types";
+import { cn } from "@lib/utils";
+import { MenuToggleProps, SectionProps } from "@types";
 
 interface MobileMenuItemsProps {
     mainText: string;

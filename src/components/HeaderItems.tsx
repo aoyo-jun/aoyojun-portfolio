@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
-import { cn } from "../lib/utils";
-import { SectionProps } from "../types";
+import { cn } from "@lib/utils";
+import { SectionProps } from "@types";
 
 interface HeaderItemsProps {
     mainText: string;

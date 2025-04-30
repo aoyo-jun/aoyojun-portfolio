@@ -1,12 +1,12 @@
-import HeaderItems from "./HeaderItems.tsx";
-import Menu from "./Menu.tsx";
-import { MenuToggleProps } from "../types";
-import { SectionProps } from "../types.ts"
+import HeaderItems from "@components/HeaderItems";
+import Menu from "@components/Menu";
+import { MenuToggleProps } from "@types";
+import { SectionProps } from "@types"
 
-import Logo from "../assets/svg/Logo/Logo.tsx"
-import { ReactComponent as Globe } from '../assets/svg/globe.svg';
-import { ReactComponent as Github } from '../assets/svg/github.svg';
-import { ReactComponent as Linkedin } from '../assets/svg/linkedin.svg';
+import Logo from "@components/Logo/Logo"
+import { ReactComponent as Globe } from '@assets/svg/globe.svg';
+import { ReactComponent as Github } from '@assets/svg/github.svg';
+import { ReactComponent as Linkedin } from '@assets/svg/linkedin.svg';
 
 function Header({
     menuOpen,
@@ -15,7 +15,7 @@ function Header({
     scrollToSection
 }: MenuToggleProps & SectionProps) {
     return (
-        <nav className="fixed top-0 z-[1000] w-full flex flex-col items-center justify-center bg-black-bg text-[0.75rem] lg:text-[0.85rem] font-mada border-1 border-b-[#262626] lg:border-none
+        <nav className="fixed top-0 z-[1000] w-full flex flex-col items-center justify-center bg-black-bg text-[0.75rem] lg:text-[0.85rem] border-1 border-b-[#262626] lg:border-none
         lg:bg-transparent lg:[background-image:linear-gradient(#000000_1px,transparent_1px),linear-gradient(to_right,#000000_1px,rgba(0,0,0,0.7)_1px)]
         lg:[background-position-y:1px] lg:[background-size:2px_2px] lg:after:absolute lg:after:-bottom-px lg:after:left-0 lg:after:h-px after:w-full lg:after:bg-brand-w1/10">
             <div className="h-9 grid items-center grid-cols-[repeat(4,minmax(0,1fr))] lg:grid-cols-[repeat(12,minmax(0,1fr))]
